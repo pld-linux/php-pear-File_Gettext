@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          File
-%define         _subclass       Gettext
+%define		_class		File
+%define		_subclass	Gettext
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
