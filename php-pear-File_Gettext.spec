@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          File
 %define         _subclass       Gettext
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - GNU Gettext file parser
