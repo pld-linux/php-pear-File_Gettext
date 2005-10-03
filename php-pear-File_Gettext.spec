@@ -15,7 +15,10 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	555edd8078ca7ccd156b6bd0eb98f5c6
 URL:		http://pear.php.net/package/File_Gettext/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-pcre
 Requires:	php-pear
+Requires:	php-pear-PEAR
+Requires:	php-common >= 3:4.1.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
