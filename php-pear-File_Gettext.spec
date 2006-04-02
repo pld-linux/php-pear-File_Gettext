@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - GNU Gettext file parser
 Summary(pl):	%{_pearname} - parser plików GNU Gettext
 Name:		php-pear-%{_pearname}
-Version:	0.3.4
-Release:	2
+Version:	0.4.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	a89095de7b2ea259953a6aac9700213d
+# Source0-md5:	15603cf3769811e61d342f80956bc6fd
 URL:		http://pear.php.net/package/File_Gettext/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
