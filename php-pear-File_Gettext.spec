@@ -4,7 +4,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - GNU Gettext file parser
-Summary(pl):	%{_pearname} - parser plików GNU Gettext
+Summary(pl.UTF-8):   %{_pearname} - parser plikÃ³w GNU Gettext
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
 Release:	2
@@ -28,8 +28,8 @@ Reader and writer for GNU PO and MO files.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Za pomoc± tej klasy mo¿liwy jest odczyt i zapis z/do plików PO i MO.
+%description -l pl.UTF-8
+Za pomocÄ… tej klasy moÅ¼liwy jest odczyt i zapis z/do plikÃ³w PO i MO.
 
 Ta klasa ma w PEAR status: %{_status}.
 
