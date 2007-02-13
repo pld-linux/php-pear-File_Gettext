@@ -4,7 +4,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - GNU Gettext file parser
-Summary(pl.UTF-8):   %{_pearname} - parser plików GNU Gettext
+Summary(pl.UTF-8):	%{_pearname} - parser plików GNU Gettext
 Name:		php-pear-%{_pearname}
 Version:	0.4.0
 Release:	2
