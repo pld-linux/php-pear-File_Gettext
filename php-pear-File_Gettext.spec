@@ -1,21 +1,19 @@
+%define		status		beta
+%define		pearname	File_Gettext
 %include	/usr/lib/rpm/macros.php
-%define		_class		File
-%define		_subclass	Gettext
-%define		_status		beta
-%define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_pearname} - GNU Gettext file parser
-Summary(pl.UTF-8):	%{_pearname} - parser plików GNU Gettext
-Name:		php-pear-%{_pearname}
-Version:	0.4.1
-Release:	3
+Summary:	%{pearname} - GNU Gettext file parser
+Summary(pl.UTF-8):	%{pearname} - parser plików GNU Gettext
+Name:		php-pear-%{pearname}
+Version:	0.4.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f3bdf70544be2ef82565078cd0f9e097
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	78278dcb6d37b22bf0ad4736f01e1c73
 URL:		http://pear.php.net/package/File_Gettext/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-common >= 3:4.1.0
 Requires:	php-pcre
 Requires:	php-pear
@@ -26,15 +24,17 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Reader and writer for GNU PO and MO files.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Za pomocą tej klasy możliwy jest odczyt i zapis z/do plików PO i MO.
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
+
+mv .%{php_pear_dir}/data/File_Gettext/README .
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -46,7 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/File/*.php
+%{php_pear_dir}/File/Gettext
