@@ -1,6 +1,5 @@
 %define		status		beta
 %define		pearname	File_Gettext
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - GNU Gettext file parser
 Summary(pl.UTF-8):	%{pearname} - parser plików GNU Gettext
 Name:		php-pear-%{pearname}
