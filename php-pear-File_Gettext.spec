@@ -4,7 +4,7 @@ Summary:	%{pearname} - GNU Gettext file parser
 Summary(pl.UTF-8):	%{pearname} - parser plików GNU Gettext
 Name:		php-pear-%{pearname}
 Version:	0.4.2
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
